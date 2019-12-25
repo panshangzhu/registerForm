@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>register form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h4>Register Account</h4>
+      <h6>
+        Sign in with <a href="#">twitter</a>&nbsp; Sign in with
+        <a href="#">Facebook</a>&nbsp; Sign In with <a href="#">google</a>
+      </h6>
+      <form action="" method="POST" id="form">
+        <div>
+          <div class="input">
+            <p>User Name</p>
+            <input
+              type="text"
+              size="30"
+              name="Uname"
+              placeholder="User Name"
+              required
+              id="UName"
+            />
+
+            <P>Real Name</P>
+            <input
+              type="text"
+              name="RealName"
+              size="30"
+              placeholder="Real Name"
+              id="RName"
+              required
+            />
+          </div>
+          <div>
+            <p>Password</p>
+            <input
+              name="password"
+              size="30"
+              type="password"
+              placeholder="Password"
+              id="password"
+              required
+            />
+
+            <p>Email</p>
+            <input
+              name="email"
+              size="30"
+              type="email"
+              placeholder="Email"
+              id="email"
+              required
+            />
+          </div>
+        </div>
+        <div>
+          <br />
+          <div>
+            <input name="remenber" type="checkbox" value="remember" />Remenber
+            Me
+            <input
+              name="remenber"
+              type="checkbox"
+              value="receive"
+              id="receive"
+            />Receive Newsletter
+          </div>
+        </div>
+        <input name="Submit" type="button" value="submit" id="submit" />
+      </form>
+
+      <h6 id="errorMsg"></h6>
+      <h5>Know more about customer policy? click <a href="#">here</a></h5>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
